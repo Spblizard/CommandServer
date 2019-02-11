@@ -11,6 +11,10 @@ TcpReciver::TcpReciver(QObject *parent) : QObject(parent), m_nextBlockSize(0)
     qDebug() << QHostInfo::localHostName();
 }
 
+TcpReciver::~TcpReciver()
+{
+}
+
 void TcpReciver::slotNewConnection()
 {
     QTcpSocket *clientTcp = m_server->nextPendingConnection();
@@ -31,6 +35,13 @@ void TcpReciver::checkDatagram()
     m_udp->writeDatagram(arr, datagram.senderAddress(), 11001);
 }
 
+void TcpReciver::sendDatagram()
+{
+   QByteArray arr("exit");
+   QNetworkDatagram datagram(arr, QHostAddress::Broadcast, 11002);
+   m_udp->writeDatagram(datagram);
+}
+
 void TcpReciver::ReadClient()
 {
     m_client = (QTcpSocket*) sender();
@@ -46,9 +57,9 @@ void TcpReciver::ReadClient()
             break;
         QString command;
         in >> command;
-        if (command == "reboot")
+        if (command == "Reboot")
             commandReboot();
-        else if (command == "shutdown")
+        else if (command == "Shutdown")
             commandShutdown();
         else if (command == "chromium") {
             if (!chromiumStarted)

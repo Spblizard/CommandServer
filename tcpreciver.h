@@ -19,6 +19,7 @@ class TcpReciver : public QObject
     Q_OBJECT
 public:
     explicit TcpReciver(QObject *parent = nullptr);
+    ~TcpReciver();
 private:
     QTcpServer *m_server;
     QTcpSocket *m_client;
@@ -32,6 +33,7 @@ signals:
 public slots:
     virtual void slotNewConnection();
     void checkDatagram();
+    void sendDatagram();
     void ReadClient();
     void commandReboot();
     void commandShutdown();

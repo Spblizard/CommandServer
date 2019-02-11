@@ -7,5 +7,7 @@ int main(int argc, char *argv[])
 
     TcpReciver serv;
 
+    QObject::connect(&a, SIGNAL (aboutToQuit()), &serv, SLOT (sendDatagram()));
+
     return a.exec();
 }
