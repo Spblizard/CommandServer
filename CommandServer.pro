@@ -21,7 +21,7 @@ INSTALLS = target
 
 SOURCES += \
         main.cpp \
-    tcpreciver.cpp
+    tcpreciver/tcpreciver.cpp
 
 HEADERS += \
-    tcpreciver.h
+    tcpreciver/tcpreciver.h
