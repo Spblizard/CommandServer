@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/user/work/CommandServer/build",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -I/home/user/work/CommandServer/build/CommandServer_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork    -fPIC -o CMakeFiles/CommandServer.dir/CommandServer_autogen/mocs_compilation.cpp.o -c /home/user/work/CommandServer/build/CommandServer_autogen/mocs_compilation.cpp",
+  "file": "/home/user/work/CommandServer/build/CommandServer_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/home/user/work/CommandServer/build",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -I/home/user/work/CommandServer/build/CommandServer_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork    -fPIC -o CMakeFiles/CommandServer.dir/src/main.cpp.o -c /home/user/work/CommandServer/src/main.cpp",
+  "file": "/home/user/work/CommandServer/src/main.cpp"
+},
+{
+  "directory": "/home/user/work/CommandServer/build",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -I/home/user/work/CommandServer/build/CommandServer_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork    -fPIC -o CMakeFiles/CommandServer.dir/src/tcpreciver.cpp.o -c /home/user/work/CommandServer/src/tcpreciver.cpp",
+  "file": "/home/user/work/CommandServer/src/tcpreciver.cpp"
+}
+]

@@ -1,0 +1,4 @@
+/home/user/work/CommandServer/build/CMakeFiles/rebuild_cache.dir
+/home/user/work/CommandServer/build/CMakeFiles/edit_cache.dir
+/home/user/work/CommandServer/build/CMakeFiles/CommandServer.dir
+/home/user/work/CommandServer/build/CMakeFiles/CommandServer_autogen.dir

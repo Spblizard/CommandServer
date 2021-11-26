@@ -1,5 +1,5 @@
 #include <QCoreApplication>
-#include "tcpreciver/tcpreciver.h"
+#include "tcpreciver.h"
 
 int main(int argc, char *argv[])
 {
