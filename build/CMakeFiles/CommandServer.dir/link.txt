@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/CommandServer.dir/CommandServer_autogen/mocs_compilation.cpp.o CMakeFiles/CommandServer.dir/src/main.cpp.o CMakeFiles/CommandServer.dir/src/tcpreciver.cpp.o  -o CommandServer  /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8 
