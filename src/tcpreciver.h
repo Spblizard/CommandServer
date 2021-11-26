@@ -25,17 +25,17 @@ private:
     QTcpSocket *m_client;
     QUdpSocket *m_udp;
     quint16 m_nextBlockSize;
+    QStringList mCommands = { "подсветка", "шар" };
 
 signals:
 
 public slots:
     virtual void slotNewConnection();
+    void slotDisconnected();
     void checkDatagram();
     void sendDatagram();
-    void ReadClient();
-    void commandReboot();
-    void commandShutdown();
-    QString checkName();
+    void readClient();
+    void sendCommand(const QString &command);
 };
 
 #endif // TCPRECIVER_H
