@@ -13,6 +13,7 @@
 #include <QHostInfo>
 #include <QProcess>
 #include <QProcessEnvironment>
+#include "jsonconf.h"
 
 class TcpReciver : public QObject
 {
@@ -25,7 +26,7 @@ private:
     QTcpSocket *m_client;
     QUdpSocket *m_udp;
     quint16 m_nextBlockSize;
-    QStringList mCommands = { "подсветка", "шар" };
+    QStringList mCommands;
 
 signals:
 

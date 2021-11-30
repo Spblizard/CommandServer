@@ -5,6 +5,10 @@ TcpReciver::TcpReciver(QObject *parent) : QObject(parent), m_nextBlockSize(0)
     m_server = new QTcpServer(this);
     m_udp = new QUdpSocket(this);
     m_udp->bind(QHostAddress::Any, 11002);
+    JsonConf conf;
+    conf.openConfig();
+    mCommands = conf.getParametr("commands").toStringList();
+    qDebug() << mCommands;
     m_server->listen(QHostAddress::Any, 11000);
     connect(m_server, &QTcpServer::newConnection, this, &TcpReciver::slotNewConnection);
     connect(m_udp, &QUdpSocket::readyRead, this, &TcpReciver::checkDatagram);
